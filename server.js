@@ -8,8 +8,8 @@ app.use(bodyParser.json());
 
 var PORT = 3306;
 
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 app.listen(PORT, function() {
     console.log("Friend Finder on http://localhost:" + PORT);
